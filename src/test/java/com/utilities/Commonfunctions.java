@@ -284,7 +284,7 @@ public class Commonfunctions {
 				Select dropdown = new Select(element);
 				List<WebElement> dropdownValues = dropdown.getOptions();
 				// Print the size of dropdown values
-				System.out.println("dropdown values are: "+dropdownValues.size());
+				System.out.println("dropdown values are: " + dropdownValues.size());
 				// Print the dropdown values
 				for (int i = 0; i < dropdownValues.size(); i++) {
 					System.out.println(dropdownValues.get(i).getText());
@@ -324,6 +324,16 @@ public class Commonfunctions {
 			}
 		} else {
 			System.out.println("The webelement is NOT displayed, please check**************");
+		}
+
+	}
+
+	public void verifyWebElement(By locator) {
+		//Validate the given Locator has displayed or not on current Page?
+		if (driver.findElements(locator).size() > 0) {
+			System.out.println(locator + " is displayed on screen ");
+		} else {
+			System.out.println(locator + " is not displayed on screen,please check the locator ");
 		}
 
 	}

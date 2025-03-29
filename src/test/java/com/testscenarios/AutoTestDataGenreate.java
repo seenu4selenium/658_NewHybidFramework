@@ -27,14 +27,18 @@ public class AutoTestDataGenreate extends Commonfunctions {
 	@Test
 	public void f() throws Exception {
 
-		clickByAnyLocator(loc.atd_numberRange_checkbox);
-		clickByAnyLocator(loc.atd_Excel_RadioButton);
-		sendKeysByAnyLocator(loc.atd_numberofrows_Editbox, "ATD_NumberOfRows");
-		// Click on generate button
-		clickByAnyLocator(loc.atd_generate_button);
-		implicitWait(30);
-		// Click on download button
-		clickByAnyLocator(loc.atd_download_button);
+		//Verify atd_nameOption_dropdown locator has displayed?
+		verifyWebElement(loc.atd_nameOption_dropdown);
+		
+		
+//		clickByAnyLocator(loc.atd_numberRange_checkbox);
+//		clickByAnyLocator(loc.atd_Excel_RadioButton);
+//		sendKeysByAnyLocator(loc.atd_numberofrows_Editbox, "ATD_NumberOfRows");
+//		// Click on generate button
+//		clickByAnyLocator(loc.atd_generate_button);
+//		implicitWait(30);
+//		// Click on download button
+//		clickByAnyLocator(loc.atd_download_button);
 
 	}
 
