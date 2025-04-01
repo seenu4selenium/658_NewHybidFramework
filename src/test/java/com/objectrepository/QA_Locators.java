@@ -20,4 +20,16 @@ public class QA_Locators {
 	public final By atd_nameOption_dropdown = By.xpath("//*[@id='property-table']/div[2]/div[4]/div/select");
 	
 	public final By dob_dropdown = By.xpath("//*[@id='basicBootstrapForm']/div[11]/div[2]/select");
+	
+	//TC2_Login User with correct email and password (https://automationexercise.com/test_cases)
+	public final By AE_Homepage_Click = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[1]/a");
+	public final By AE_Signuplogin_Click = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[4]/a");
+	public final By AE_Logintoyouraccount_text = By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/h2");
+	public final By AE_Consent_Click = By.xpath("/html/body/div/div[2]/div[2]/div[2]/div[2]/button[1]/p");
+	public final By AE_EmailAddress_Editbox = By.xpath("//input[@type='email']");
+	public final By AE_Password_Editbox = By.xpath("//input[@type='password']");
+	public final By AE_LoginButton_Click = By.xpath("//button[@type='submit']");
+	public final By AE_LoggedinButton_text = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a");
+	public final By AE_Deleteaccount_Click = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a");
+	public final By AE_accountdeleted_Deleted = By.xpath("//*[@id=\"form\"]/div/div/div/h2/b");
 }
