@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testscenarios.AutoTestDataGenreate">
+      <class name="com.testscenarios.TC2_LoginUserwithcorrectemailandpassword">
         <methods>
-          <include name="f"/>
+          <include name="loginUserwithcorrectemailandpassword"/>
+          <include name="screenshotAfterAtTestAnnotation"/>
         </methods>
-      </class> <!-- com.testscenarios.AutoTestDataGenreate -->
+      </class> <!-- com.testscenarios.TC2_LoginUserwithcorrectemailandpassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
