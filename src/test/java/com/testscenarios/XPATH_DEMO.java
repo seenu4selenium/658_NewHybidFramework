@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class NewTest {
+public class XPATH_DEMO {
 	@Test
 	public void f() {
 		WebDriver driver;
@@ -22,5 +22,8 @@ public class NewTest {
 		//driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
 		driver.findElement(By.id("firstName")).sendKeys("RAMAN");
+		driver.findElement(By.xpath("//*[@id='lastName']")).sendKeys("selenium");
+		
+		
 	}
 }

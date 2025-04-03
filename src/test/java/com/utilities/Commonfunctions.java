@@ -329,12 +329,55 @@ public class Commonfunctions {
 	}
 
 	public void verifyWebElement(By locator) {
-		//Validate the given Locator has displayed or not on current Page?
+		// Validate the given Locator has displayed or not on current Page?
 		if (driver.findElements(locator).size() > 0) {
 			System.out.println(locator + " is displayed on screen ");
 		} else {
 			System.out.println(locator + " is not displayed on screen,please check the locator ");
 		}
 
+	}
+
+	public void GetAllWebelementsonCurrentPage(String URL) throws Exception {
+		launchChromeBrowser();
+		getURL(URL);
+
+		By allEdiboxes = By.xpath("//*[@type='text']");
+		By checkboxes = By.xpath("//*[@type='checkbox']");
+		By radiobuttons = By.xpath("//*[@type='radio']");
+		By hyperlinks = By.xpath("//a");
+		By dropdowns = By.xpath("//select");
+		By buttons = By.xpath("//button");
+		By password_editbox = By.xpath("//*[@type='password']");
+
+		// Get editboxes from current page
+		List<WebElement> allEditboxesCount = driver.findElements(allEdiboxes);
+		System.out.println("Ediboxes count is: " + allEditboxesCount.size());
+
+		List<WebElement> allPasswordCount = driver.findElements(hyperlinks);
+		System.out.println("Password Ediboxes count is: " + allPasswordCount.size());
+
+		List<WebElement> allCheckboxesCount = driver.findElements(checkboxes);
+		System.out.println("Checkboxes count is: " + allCheckboxesCount.size());
+
+		List<WebElement> allRadiobuttonsCount = driver.findElements(radiobuttons);
+		System.out.println("Radiobuttons count is: " + allRadiobuttonsCount.size());
+
+		List<WebElement> allHyperlinksCount = driver.findElements(hyperlinks);
+		System.out.println("Hyperlinks count is: " + allHyperlinksCount.size());
+
+		List<WebElement> allDropdownCount = driver.findElements(dropdowns);
+		System.out.println("Dropdown count is: " + allDropdownCount.size());
+
+		List<WebElement> allButtonsCount = driver.findElements(buttons);
+		System.out.println("Buttons count is: " + allButtonsCount.size());
+
+		// Print all total webelements count in the current page?
+		long totalWebElemnts = allEditboxesCount.size() + allPasswordCount.size() + allCheckboxesCount.size()
+				+ allRadiobuttonsCount.size() + allHyperlinksCount.size() + allDropdownCount.size()
+				+ allButtonsCount.size();
+		System.out.println("**************************************************");
+		System.out.println("****Total webelements count is: " + totalWebElemnts);
+		System.out.println("**************************************************");
 	}
 }

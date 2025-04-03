@@ -33,4 +33,14 @@ public class QA_Locators {
 	public final By AE_LoggedinButton_text = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a");
 	public final By AE_Deleteaccount_Click = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a");
 	public final By AE_accountdeleted_Deleted = By.xpath("//*[@id=\"form\"]/div/div/div/h2/b");
+
+	// Cwl locators
+	public final By allEdiboxes = By.xpath("//*[@type='text']");
+	public final By checkboxes = By.xpath("//*[@type='checkbox']");
+	public final By radiobuttons = By.xpath("//*[@type='radio']");
+	public final By hyperlinks = By.xpath("//a");
+	public final By dropdowns = By.xpath("//select");
+	public final By buttons = By.xpath("//button");
+	public final By password_editbox = By.xpath("//*[@type='password']");
+
 }
