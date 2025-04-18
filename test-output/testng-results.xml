@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-14T06:44:59 MDT" name="Default suite" finished-at="2025-04-14T06:45:02 MDT" duration-ms="3068">
+  <suite started-at="2025-04-18T06:24:19 MDT" name="Suite" finished-at="2025-04-18T06:25:42 MDT" duration-ms="82107">
     <groups>
     </groups>
-    <test started-at="2025-04-14T06:44:59 MDT" name="Default test" finished-at="2025-04-14T06:45:02 MDT" duration-ms="3068">
-      <class name="com.testscenarios.FB_loginWithDBcredentails">
-        <test-method signature="f()[pri:0, instance:com.testscenarios.FB_loginWithDBcredentails@4e08711f]" started-at="2025-04-14T06:44:59 MDT" name="f" finished-at="2025-04-14T06:45:02 MDT" duration-ms="3009" status="PASS">
+    <test started-at="2025-04-18T06:24:19 MDT" name="Test" finished-at="2025-04-18T06:25:42 MDT" duration-ms="82107">
+      <class name="com.testscenarios.AutoTestDataGenreate">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testscenarios.AutoTestDataGenreate@a1cdc6d]" started-at="2025-04-18T06:24:19 MDT" name="beforeClass" finished-at="2025-04-18T06:24:26 MDT" duration-ms="6599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f()[pri:0, instance:com.testscenarios.AutoTestDataGenreate@a1cdc6d]" started-at="2025-04-18T06:24:26 MDT" name="f" finished-at="2025-04-18T06:24:27 MDT" duration-ms="678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- com.testscenarios.FB_loginWithDBcredentails -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testscenarios.AutoTestDataGenreate@a1cdc6d]" started-at="2025-04-18T06:24:27 MDT" name="afterMethod" finished-at="2025-04-18T06:24:27 MDT" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testscenarios.AutoTestDataGenreate@a1cdc6d]" started-at="2025-04-18T06:24:27 MDT" name="afterClass" finished-at="2025-04-18T06:24:28 MDT" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.testscenarios.AutoTestDataGenreate -->
+      <class name="com.testscenarios.TC2_LoginUserwithcorrectemailandpassword">
+        <test-method signature="loginUserwithcorrectemailandpassword()[pri:0, instance:com.testscenarios.TC2_LoginUserwithcorrectemailandpassword@5609159b]" started-at="2025-04-18T06:24:34 MDT" name="loginUserwithcorrectemailandpassword" finished-at="2025-04-18T06:25:41 MDT" duration-ms="67130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserwithcorrectemailandpassword -->
+        <test-method is-config="true" signature="screenshotAfterAtTestAnnotation()[pri:0, instance:com.testscenarios.TC2_LoginUserwithcorrectemailandpassword@5609159b]" started-at="2025-04-18T06:25:41 MDT" name="screenshotAfterAtTestAnnotation" finished-at="2025-04-18T06:25:42 MDT" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotAfterAtTestAnnotation -->
+      </class> <!-- com.testscenarios.TC2_LoginUserwithcorrectemailandpassword -->
+      <class name="com.testscenarios.GetAllDropdownValuesDemo">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testscenarios.GetAllDropdownValuesDemo@57250572]" started-at="2025-04-18T06:24:28 MDT" name="beforeClass" finished-at="2025-04-18T06:24:33 MDT" duration-ms="5513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f()[pri:0, instance:com.testscenarios.GetAllDropdownValuesDemo@57250572]" started-at="2025-04-18T06:24:33 MDT" name="f" finished-at="2025-04-18T06:24:34 MDT" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testscenarios.GetAllDropdownValuesDemo@57250572]" started-at="2025-04-18T06:24:34 MDT" name="afterMethod" finished-at="2025-04-18T06:24:34 MDT" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testscenarios.GetAllDropdownValuesDemo@57250572]" started-at="2025-04-18T06:24:34 MDT" name="afterClass" finished-at="2025-04-18T06:24:34 MDT" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.testscenarios.GetAllDropdownValuesDemo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
