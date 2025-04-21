@@ -5,8 +5,10 @@
 		<classes>
 			<class name="com.testscenarios.AutoTestDataGenreate" />
 			<class name="com.testscenarios.GetAllDropdownValuesDemo" />
-			<class name="com.testscenarios.TC2_LoginUserwithcorrectemailandpassword" />
+			<class
+				name="com.testscenarios.TC2_LoginUserwithcorrectemailandpassword" />
 			<class name="com.testscenarios.XPATH_DEMO" />
+			<class name="com.testscenarios.FaceBookLogin" />
 
 		</classes>
 	</test> <!-- Test -->
